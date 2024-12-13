@@ -1,0 +1,130 @@
+<div class="min-h-screen flex items-stretch bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700">
+  <!-- Form Section -->
+  <div class="flex-1 flex items-center justify-center bg-white shadow-lg rounded-lg p-8">
+    <div class="w-full max-w-md">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Submit Leave Request</h2>
+      <form (ngSubmit)="onSubmit()" [formGroup]="leaveRequestForm" class="space-y-4">
+        <!-- Apply Date -->
+        <div>
+          <label for="applyDate" class="block text-sm font-medium text-gray-700">Apply Date</label>
+          <input
+            id="applyDate"
+            type="date"
+            formControlName="applyDate"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm bg-gray-200"
+          />
+        </div>
+
+        <!-- From Date -->
+        <div>
+          <label for="fromDate" class="block text-sm font-medium text-gray-700">From Date</label>
+          <input
+            id="fromDate"
+            type="date"
+            formControlName="fromDate"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm bg-gray-200"
+          />
+        </div>
+
+        <!-- Days -->
+        <div>
+          <label for="days" class="block text-sm font-medium text-gray-700">Days</label>
+          <input
+            id="days"
+            type="number"
+            formControlName="days"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm bg-gray-200"
+          />
+        </div>
+
+        <!-- Reason -->
+        <div>
+          <label for="reason" class="block text-sm font-medium text-gray-700">Reason for Leave</label>
+          <textarea
+            id="reason"
+            formControlName="reason"
+            rows="3"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm bg-gray-200"
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          [disabled]="leaveRequestForm.invalid"
+          class="w-full py-2 px-4 bg-indigo-500 hover:bg-indigo-600 text-white font-medium rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2"
+        >
+          Submit Request
+        </button>
+      </form>
+
+      <!-- Success and Error Messages -->
+      <p *ngIf="successMessage" class="text-green-500 mt-4 text-center">{{ successMessage }}</p>
+      <p *ngIf="errorMessage" class="text-red-500 mt-4 text-center">{{ errorMessage }}</p>
+    </div>
+  </div>
+   <!-- Submitted Requests Section -->
+   <div class="flex-1 bg-gray-100 p-8 overflow-y-auto">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Submitted Leave Requests</h2>
+    <ul class="space-y-4">
+      <li *ngFor="let request of leaveRequests" class="p-4 bg-white shadow-lg rounded-lg">
+        <div class="flex justify-between">
+          <div>
+            <p><strong>Apply Date:</strong> {{ request.applyDate }}</p>
+            <p><strong>From Date:</strong> {{ request.fromDate }}</p>
+            <p><strong>Days:</strong> {{ request.days }}</p>
+            <p><strong>Reason:</strong> {{ request.reason }}</p>
+            <p><strong>Status:</strong> 
+              <span
+                [ngClass]="{
+                  'text-yellow-500': request.status === 'Pending',
+                  'text-green-500': request.status === 'Approved',
+                  'text-red-500': request.status === 'Rejected'
+                }"
+              >
+                {{ request.status }}
+              </span>
+            </p>
+            <!-- <p *ngIf="request.rejectionReason && request.status === 'Rejected'">
+              <strong>Rejection Reason:</strong> {{ request.rejectionReason }}
+            </p> -->
+          </div>
+          <div *ngIf="request.status === 'Pending'" class="space-x-2">
+            <button
+              class="px-4 py-2 bg-green-500 text-white font-medium rounded-lg"
+              (click)="approveRequest(request)"
+            >
+              Approve
+            </button>
+            <!-- <button
+              class="px-4 py-2 bg-red-500 text-white font-medium rounded-lg"
+              (click)="openRejectModal(request)"
+            >
+              Reject
+            </button> -->
+          </div>
+        </div>
+      </li>
+    </ul>
+ <!-- Reject Modal -->
+ <!-- <div *ngIf="selectedRequest" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+  <div class="bg-white p-6 rounded-lg w-full max-w-md">
+    <h3 class="text-lg font-bold mb-4">Reject Request</h3>
+    <textarea
+      [(ngModel)]="rejectionReason"
+      rows="4"
+      class="w-full p-2 border border-gray-300 rounded-md"
+      placeholder="Enter rejection reason"
+    ></textarea>
+    <div class="flex justify-end mt-4">
+      <button
+        class="bg-red-500 text-white py-2 px-4 rounded-md font-bold"
+        (click)="rejectRequest()"
+      >
+        Submit
+      </button>
+    </div>
+  </div> -->
+<!-- </div> -->
+</div>
+</div>

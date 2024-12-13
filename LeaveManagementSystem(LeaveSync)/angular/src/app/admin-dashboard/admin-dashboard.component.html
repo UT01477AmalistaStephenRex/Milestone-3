@@ -1,0 +1,22 @@
+<div class="min-h-screen bg-gray-100">
+    <div class="container mx-auto py-8">
+      <h1 class="text-3xl font-bold text-center mb-6">Admin Dashboard</h1>
+  
+      <!-- Manage Students Section -->
+      <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+        <h2 class="text-xl font-semibold mb-4">
+          <a [routerLink]="'/manage-students'" class="text-blue-500 hover:underline">Manage Students</a>
+        </h2>
+        <p class="text-gray-600">Add, edit, or remove student records from the system.</p>
+      </div>
+  
+      <!-- Manage Leave Requests Section -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h2 class="text-xl font-semibold mb-4">
+          <a [routerLink]="'/manage-request'" class="text-blue-500 hover:underline">Manage Leave Requests</a>
+        </h2>
+        <p class="text-gray-600">View and manage leave requests submitted by students.</p>
+      </div>
+    </div>
+  </div>
+  
