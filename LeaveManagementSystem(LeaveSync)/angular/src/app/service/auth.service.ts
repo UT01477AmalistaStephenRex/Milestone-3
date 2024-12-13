@@ -53,8 +53,10 @@ export class AuthService {
    * @param user - Registration details of the user.
    * @returns Observable for the registration response.
    */
-  register(user: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/Register`, user);
+  addUser(payload: any): Observable<any> {
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MzE2OTAiLCJlbWFpbCI6ImFkbWluMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImZpcnN0bmFtZSI6IlN1cGVyIiwibGFzdG5hbWUiOiJBZG1pbiIsImV4cCI6MTczMzk1MjkwOCwiaXNzIjoiTGVhdmUiLCJhdWQiOiJVc2VycyJ9.9uBODCnSC8dhVolVhoWLR2lwbqscNqTQ1oEXqhFwYWQ'; // Replace with the actual token
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.post<any>(`${this.apiUrl}/CreateUser`, payload, { headers });
   }
 
   /**

@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\database\\leavedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\leavedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\database\\entities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\entities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\database\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\database\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\database\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\database\\leavedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\leavedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\userdetails.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -25,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\dtos\\responsedto\\allleaveresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dtos\\responsedto\\allleaveresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -68,22 +84,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\database\\entities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\entities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\database\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\database\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\entities\\leaverequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{474008C8-18E5-439D-90B5-38C6C4C52CEA}|WebApplication1\\WebApplication1.csproj|c:\\users\\welcome\\onedrive\\desktop\\ms3\\leavemanagementsystem(leavesync)\\leaverequests\\leaverequests\\webapplication1\\webapplication1\\iservice\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,48 +129,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AQIAAIcUAAAAAAAAAADwv5UUAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-12-12T20:02:02.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\IService\\IUserService.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\IService\\IUserService.cs",
-              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\IService\\IUserService.cs",
-              "RelativeToolTip": "WebApplication1\\IService\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:54:38.208Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T15:34:24.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Database\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\User.cs",
+              "RelativeToolTip": "WebApplication1\\Database\\Entities\\User.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T15:19:59.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
               "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAhwHEAAAAMAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAcwHoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T16:34:40.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "RequestRepository.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Repository\\RequestRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Repository\\RequestRepository.cs",
@@ -182,32 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAuwD8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:34:24.466Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Database\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\User.cs",
-              "RelativeToolTip": "WebApplication1\\Database\\Entities\\User.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAACUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:19:59.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "LeaveDBContext.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\LeaveDBContext.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Database\\LeaveDBContext.cs",
@@ -215,12 +192,11 @@
               "RelativeToolTip": "WebApplication1\\Database\\LeaveDBContext.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAowCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:37:02.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T15:37:02.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\appsettings.json",
               "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
@@ -233,7 +209,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
+              "Title": "LeaveRequest.cs",
+              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\LeaveRequest.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Database\\Entities\\LeaveRequest.cs",
+              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\LeaveRequest.cs",
+              "RelativeToolTip": "WebApplication1\\Database\\Entities\\LeaveRequest.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAUwBcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T15:26:52.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RequestController.cs",
+              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Controllers\\RequestController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RequestController.cs",
+              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Controllers\\RequestController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\RequestController.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAkwF0AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T15:35:08.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\Status.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Database\\Entities\\Status.cs",
+              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\Status.cs",
+              "RelativeToolTip": "WebApplication1\\Database\\Entities\\Status.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T15:25:27.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Database\\Entities\\Role.cs",
+              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\Role.cs",
+              "RelativeToolTip": "WebApplication1\\Database\\Entities\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T15:23:47.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\IService\\IUserService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\IService\\IUserService.cs",
+              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\IService\\IUserService.cs",
+              "RelativeToolTip": "WebApplication1\\IService\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T15:54:38.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAIcUAAAAAAAAAADwv5UUAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-12-12T20:02:02.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "AllUserResponse.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\DTOs\\ResponseDTO\\AllUserResponse.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTOs\\ResponseDTO\\AllUserResponse.cs",
@@ -245,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "UserRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\DTOs\\RequestDTO\\UserRequestDTO.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTOs\\RequestDTO\\UserRequestDTO.cs",
@@ -257,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "UserDetails.json",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\UserDetails.json",
               "RelativeDocumentMoniker": "WebApplication1\\UserDetails.json",
@@ -265,12 +317,11 @@
               "RelativeToolTip": "WebApplication1\\UserDetails.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-13T07:17:41.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T07:17:41.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Service\\UserService.cs",
@@ -282,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "AllLeaveResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\DTOs\\ResponseDTO\\AllLeaveResponseDTO.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTOs\\ResponseDTO\\AllLeaveResponseDTO.cs",
@@ -294,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "UserResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\DTOs\\ResponseDTO\\UserResponseDTO.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTOs\\ResponseDTO\\UserResponseDTO.cs",
@@ -306,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\DTOs\\RequestDTO\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DTOs\\RequestDTO\\LoginRequestDTO.cs",
@@ -318,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Repository\\UserRepository.cs",
@@ -330,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "RequestService.cs",
               "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Service\\RequestService.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Service\\RequestService.cs",
@@ -339,54 +390,6 @@
               "ViewState": "AQIAAFoAAAAAAAAAAAAgwGkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T15:39:23.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RequestController.cs",
-              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Controllers\\RequestController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RequestController.cs",
-              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Controllers\\RequestController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\RequestController.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAkwF0AAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:35:08.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\Status.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Database\\Entities\\Status.cs",
-              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\Status.cs",
-              "RelativeToolTip": "WebApplication1\\Database\\Entities\\Status.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:25:27.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\Role.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Database\\Entities\\Role.cs",
-              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\Role.cs",
-              "RelativeToolTip": "WebApplication1\\Database\\Entities\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:23:47.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "LeaveRequest.cs",
-              "DocumentMoniker": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\LeaveRequest.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Database\\Entities\\LeaveRequest.cs",
-              "ToolTip": "C:\\Users\\welcome\\OneDrive\\Desktop\\MS3\\LeaveManagementSystem(LeaveSync)\\LeaveRequests\\LeaveRequests\\WebApplication1\\WebApplication1\\Database\\Entities\\LeaveRequest.cs",
-              "RelativeToolTip": "WebApplication1\\Database\\Entities\\LeaveRequest.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAswA8AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:26:52.439Z"
             },
             {
               "$type": "Document",

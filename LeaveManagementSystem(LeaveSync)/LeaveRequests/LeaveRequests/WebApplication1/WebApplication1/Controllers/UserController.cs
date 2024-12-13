@@ -21,7 +21,7 @@ namespace WebApplication1.Controllers
         //User oruvarai create seivadhatku
 
         [HttpPost("CreateUser")]
-        public async Task<IActionResult> CreateUser([FromForm] UserRequestDTO userRequestDTO)
+        public async Task<IActionResult> CreateUser([FromBody] UserRequestDTO userRequestDTO)
         {
             try
             {

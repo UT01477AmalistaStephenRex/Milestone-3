@@ -60,7 +60,7 @@ export class LoginComponent {
         // Map role to numeric value
         const roleValue = role === 'admin' ? 1 : 2;
 
-        this.authService.login(email, password, roleValue).subscribe(
+        this.authService.login(email, password, role).subscribe(
             (user) => {
                 console.log('Login Successful:', user);
                 this.loginError = '';
