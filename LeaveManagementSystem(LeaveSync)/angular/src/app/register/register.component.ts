@@ -8,7 +8,7 @@ import {
 } from '@angular/forms';
 import { StudentService } from '../service/student.service';
 import { AuthService } from '../service/auth.service';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -20,15 +20,26 @@ import { RouterModule } from '@angular/router';
 export class RegisterComponent {
   registerForm: FormGroup;
 
-  constructor(private fb: FormBuilder,private authService:AuthService) {
+  // constructor(private fb: FormBuilder,private authService:AuthService) {
+  //   this.registerForm = this.fb.group({
+  //     firstName: ['', [Validators.required, Validators.minLength(2)]],
+  //     lastName: ['', [Validators.required, Validators.minLength(2)]],
+  //     email: ['', [Validators.required, Validators.email]],
+  //     mobile: ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
+  //     password: ['', [Validators.required, Validators.minLength(6)]],
+  //     role: ['', [Validators.required]],
+  //   });
+  // }
+
+  constructor(private fb: FormBuilder,private authService:AuthService, private router:Router){
     this.registerForm = this.fb.group({
-      firstName: ['', [Validators.required, Validators.minLength(2)]],
-      lastName: ['', [Validators.required, Validators.minLength(2)]],
-      email: ['', [Validators.required, Validators.email]],
-      mobile: ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
-      role: ['', [Validators.required]],
-    });
+      firstName: ['', ],
+       lastName: ['', ],
+       email: ['', ],
+       mobile: ['', ],
+       password: ['', ],
+       role: ['', ],
+     });
   }
   onSubmit(): void {
     if (this.registerForm.valid) {
@@ -45,6 +56,7 @@ export class RegisterComponent {
         (response) => {
           console.log('User Registered Successfully:', response);
           this.registerForm.reset();
+          this.router.navigate(['/login'])
           // Optionally, show a success message or redirect
         },
         (error) => {

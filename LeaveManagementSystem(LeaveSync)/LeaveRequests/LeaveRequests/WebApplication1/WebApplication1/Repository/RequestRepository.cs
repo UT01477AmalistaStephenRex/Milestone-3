@@ -73,7 +73,7 @@ namespace WebApplication1.Repository
             return data;
         }
 
-        public async Task<bool> AcceptRejectRequest(int id, int status)
+        public async Task<bool> AcceptRejectRequest(int id, Status status)
         {
             var request = await _leaveDBContext.leaveRequests.FirstOrDefaultAsync(r => r.RequestId == id);
             if (request == null)
@@ -89,28 +89,36 @@ namespace WebApplication1.Repository
                 throw new Exception("No Such User!");
             }
 
-            if (status == 2)
+            if (status == Status.Rejected)  // Compare enum value directly
             {
                 request.Status = Status.Rejected;
                 requestStatus = false;
             }
-            else if (status == 3)
+            else if (status == Status.Pending)  // Compare enum value directly
             {
                 request.Status = Status.Pending;
-
-
                 requestStatus = true;
             }
-            else if (status == 4)
+            else if (status == Status.Accepted)  // Compare enum value directly
             {
                 request.Status = Status.Accepted;
+                requestStatus = true;
+            }
+            else
+            {
+                // Optionally handle cases where the status doesn't match any expected values
+                throw new ArgumentException("Invalid status value.");
             }
 
+            // Save the updated request status to the database (if necessary)
             await _leaveDBContext.SaveChangesAsync();
+
+            // Return the status indicating success or failure of the operation
             return requestStatus;
         }
+    
 
-        public async Task<ICollection<object>> CountHistory(int id)
+            public async Task<ICollection<object>> CountHistory(int id)
         {
             // Retrieve user and their leave requests
             var user = await _leaveDBContext.Users

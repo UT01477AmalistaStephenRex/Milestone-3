@@ -10,7 +10,7 @@ namespace WebApplication1.IRepository
         Task<bool> CheckRequest(int UserId, DateTime FromDate, DateTime ApplyDate);
         Task<List<LeaveRequest>> AllRequest();
         Task<LeaveRequest> GetRequestById(int id);
-        Task<bool> AcceptRejectRequest(int id, int status);
+        Task<bool> AcceptRejectRequest(int id, Status status);
 
         Task<ICollection<object>> CountHistory(int id);
 

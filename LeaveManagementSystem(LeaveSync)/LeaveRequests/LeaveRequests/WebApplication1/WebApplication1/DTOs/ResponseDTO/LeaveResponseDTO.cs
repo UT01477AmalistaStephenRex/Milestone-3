@@ -16,6 +16,6 @@ namespace WebApplication1.DTOs.ResponseDTO
 
         public string Days { get; set; }
 
-        public String Status { get; set; }
+        public Status Status { get; set; }
     }
 }

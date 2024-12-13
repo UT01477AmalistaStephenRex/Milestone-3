@@ -7,6 +7,7 @@ using System.Text;
 using WebApplication1.Database;
 using WebApplication1.Database.Entities;
 using WebApplication1.DTOs.RequestDTO;
+using WebApplication1.DTOs.ResponseDTO;
 using WebApplication1.IRepository;
 
 namespace WebApplication1.Repository
@@ -50,7 +51,7 @@ namespace WebApplication1.Repository
 
             if (dataUser == null)
             {
-                if (loginrequest.Email == "admin123@gmail.com" && loginrequest.Password == "admin1234" && loginrequest.Role== Role.Admin)
+                if (loginrequest.Email == "admin123@gmail.com" && loginrequest.Password == "admin1234" && loginrequest.Role == Role.Admin)
                 {
                     var admin = new User
                     {
@@ -73,7 +74,7 @@ namespace WebApplication1.Repository
                     {
 
                         var usermail = await _leaveDBContext.Users.FirstOrDefaultAsync(u => u.UserId == req.UserId);
-                      
+
                         if (usermail == null)
                         {
                             Console.WriteLine($"User not found for UserId: {req.UserId}");
@@ -129,6 +130,7 @@ namespace WebApplication1.Repository
             var token = CreateToken(dataUser);
             Console.WriteLine(token);
             return token;
+          
         }
 
 

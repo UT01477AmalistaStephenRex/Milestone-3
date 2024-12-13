@@ -18,7 +18,7 @@ export class ManageRequestComponent implements OnInit {
   rejectionReason: string = '';
 
   constructor(private ManageRequestService:ManageRequestService) {}
-
+  requests: any[] = [];
   ngOnInit(): void {
     this.fetchData();
   }
@@ -49,7 +49,34 @@ export class ManageRequestComponent implements OnInit {
 
 
   acceptRequest(requestId: number): void {
-    console.log(`Accepted request with ID: ${requestId}`);
+    this.ManageRequestService.acceptRequest(requestId).subscribe(
+      (response) => {
+        console.log(`Accepted request with ID: ${requestId}`, response);
+        // Optionally, refresh the list of requests
+        this.loadRequests();
+      },
+      (error) => {
+        console.error(`Error accepting request with ID: ${requestId}`, error);
+      }
+    );
+  }
+
+  // Method to load a specific request by its ID
+  loadRequests(requestId?: number): void {
+    if (requestId) {
+      this.ManageRequestService.getRequests(requestId).subscribe(
+        (response) => {
+          console.log(`Loaded request with ID: ${requestId}`, response);
+          this.requests = [response];  // Display only the specific request in the list
+        },
+        (error) => {
+          console.error(`Error loading request with ID: ${requestId}`, error);
+        }
+      );
+    } else {
+      // If no ID is provided, load all requests (if applicable)
+      // this.manageRequestService.getAllRequests().subscribe(...)
+    }
   }
 
   rejectRequest(): void {

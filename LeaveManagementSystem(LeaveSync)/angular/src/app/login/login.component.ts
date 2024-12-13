@@ -7,7 +7,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -20,56 +20,49 @@ export class LoginComponent {
   loginForm: FormGroup;
   loginError: string = '';
 
-  constructor(private fb: FormBuilder, private authService:AuthService) {
+  constructor(
+    private fb: FormBuilder,
+    private authService: AuthService,
+    private router: Router
+  ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]],
-      role:['', [Validators.required]]
+      role: ['', [Validators.required]],
     });
-
   }
-
-  // onSubmit(): void {
-  //   if (this.loginForm.valid) {
-  //     const { email, password,role } = this.loginForm.value;
-  
-  //     this.authService.login(email, password,role).subscribe(
-  //       (user) => {
-  //         if (user) {
-  //           console.log('Login Successful:', user);
-  //           this.loginError = '';
-  //           // You can store the token or user information in localStorage/sessionStorage if needed.
-  //           // localStorage.setItem('token', user.token);
-  //         } else {
-  //           this.loginError = 'Invalid email or password.';
-  //         }
-  //       },
-  //       (error) => {
-  //         console.error('Error during login:', error);
-  //         this.loginError = 'An error occurred during login. Please try again later.';
-  //       }
-  //     );
-  //   }
-  // }
-  
 
   onSubmit(): void {
     if (this.loginForm.valid) {
-        const { email, password, role } = this.loginForm.value;
+      const { email, password, role } = this.loginForm.value;
+      console.log(role);
 
-        // Map role to numeric value
-        const roleValue = role === 'admin' ? 1 : 2;
+      // Map role to numeric value if necessary (Admin: 1, User: 2)
+      const roleValue = role
 
-        this.authService.login(email, password, role).subscribe(
-            (user) => {
-                console.log('Login Successful:', user);
-                this.loginError = '';
-            },
-            (error) => {
-                console.error('Error during login:', error);
-                this.loginError = 'An error occurred during login. Please try again later.';
+      this.authService.login(email, password, roleValue).subscribe(
+        (user) => {
+          if (user) {
+            console.log('Login Successful:', user);
+            this.loginError = '';
+
+            // Redirect based on role
+            if (roleValue == '1') {
+              // If the user is an admin, navigate to the admin dashboard
+              this.router.navigate(['/admin-dashboard']);
+            } else {
+              // Otherwise, navigate to the regular user dashboard
+              this.router.navigate(['/dashboard']);
             }
-        );
+          } else {
+            this.loginError = 'Invalid email or password.';
+          }
+        },
+        (error) => {
+          console.error('Error during login:', error);
+          this.loginError = 'An error occurred during login. Please try again later.';
+        }
+      );
     }
-}
+  }
 }

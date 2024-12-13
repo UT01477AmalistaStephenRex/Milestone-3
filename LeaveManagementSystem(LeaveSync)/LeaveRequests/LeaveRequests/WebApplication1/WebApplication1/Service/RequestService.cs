@@ -70,7 +70,7 @@ namespace WebApplication1.Service
                     FromDate = d.FromDate,
                     ApplyDate = d.ApplyDate,
                     Days = d.Days,
-                    Status = d.Status.ToString()
+                    Status = d.Status
 
 
                 };
@@ -91,7 +91,7 @@ namespace WebApplication1.Service
             }
             return data;
         }
-        public async Task<bool> AcceptRejectRequest(int id, int status)
+        public async Task<bool> AcceptRejectRequest(int id, Status status)
         {
             var data = await _requestRepo.AcceptRejectRequest(id, status);
             if (data)

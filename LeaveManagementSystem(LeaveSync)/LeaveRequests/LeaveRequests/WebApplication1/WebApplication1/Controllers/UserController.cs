@@ -42,22 +42,7 @@ namespace WebApplication1.Controllers
             }
         }
 
-        //User Login aaavadhatku
 
-        //[HttpPost("Login")]
-        //public async Task<IActionResult> Login(LoginRequestDTO loginrequest)
-        //{
-        //    try
-        //    {
-        //        var data = await _userService.Login(loginrequest);
-        //        return Ok(data);
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return BadRequest(ex.Message);
-        //    }
-        //}
 
         [HttpPost("Login")]
         public IActionResult Login([FromBody] LoginRequest loginRequest)
@@ -70,6 +55,9 @@ namespace WebApplication1.Controllers
             // Your authentication logic here
             return Ok(new { Message = "Login successful" });
         }
+
+
+        
 
         //User request kodutha udan Accept or Reject Seivadhtaku
         [HttpPut("UserRequest{id}")]

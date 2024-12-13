@@ -24,7 +24,7 @@ export class ManageRequestService {
    * Get all leave requests.
    * @returns Observable of leave requests.
    */
-  getCurrentUser(): Observable<any> {
+  getCurrentUser(): Observable<any> {  
     const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MzE2OTAiLCJlbWFpbCI6ImFkbWluMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImZpcnN0bmFtZSI6IlN1cGVyIiwibGFzdG5hbWUiOiJBZG1pbiIsImV4cCI6MTczMzk1MjkwOCwiaXNzIjoiTGVhdmUiLCJhdWQiOiJVc2VycyJ9.9uBODCnSC8dhVolVhoWLR2lwbqscNqTQ1oEXqhFwYWQ'; // Replace with the actual token
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.get<any>(`http://localhost:5243/api/User/AllUsers`, { headers });
@@ -37,10 +37,10 @@ getLeaveRequests(): Observable<any[]> {
 }
 
 CreateLeaveRequests(form:any): Observable<any[]> {
-  form.userId=7
+  form.userId=15
   form.status=1
  const obj={
-    "userId": 7,
+    "userId": 15,
     "reason": form.reason,
     "fromDate": (new Date(form.fromDate)).toISOString(),
     "applyDate": (new Date(form.applyDate)).toISOString(),
@@ -80,6 +80,30 @@ CreateLeaveRequests(form:any): Observable<any[]> {
   acceptLeaveRequest(requestId: number): Observable<LeaveRequest> {
     return this.http.put<LeaveRequest>(`${this.apiUrl}/AcceptRequest/${requestId}`, {});
   }
+
+  acceptRequest(requestId: number): Observable<any> {
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MzE2OTAiLCJlbWFpbCI6ImFkbWluMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImZpcnN0bmFtZSI6IlN1cGVyIiwibGFzdG5hbWUiOiJBZG1pbiIsImV4cCI6MTczMzk1MjkwOCwiaXNzIjoiTGVhdmUiLCJhdWQiOiJVc2VycyJ9.9uBODCnSC8dhVolVhoWLR2lwbqscNqTQ1oEXqhFwYWQ'; // Replace with the actual token
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+  
+    return this.http.put<any>(`http://localhost:5243/api/Request/AcceptRejectRequest17?status=${requestId}`, {}, { headers });
+  }
+  
+  loadRequests(requestId: number,status:number){
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MzE2OTAiLCJlbWFpbCI6ImFkbWluMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImZpcnN0bmFtZSI6IlN1cGVyIiwibGFzdG5hbWUiOiJBZG1pbiIsImV4cCI6MTczMzk1MjkwOCwiaXNzIjoiTGVhdmUiLCJhdWQiOiJVc2VycyJ9.9uBODCnSC8dhVolVhoWLR2lwbqscNqTQ1oEXqhFwYWQ'; // Replace with the actual token
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+  
+    return this.http.put<any>(`http://localhost:5243/api/Request/AcceptRejectRequest?status=${requestId}`, {}, { headers });
+  }
+
+
+  getRequests(requestId: number): Observable<any> {
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MzE2OTAiLCJlbWFpbCI6ImFkbWluMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImZpcnN0bmFtZSI6IlN1cGVyIiwibGFzdG5hbWUiOiJBZG1pbiIsImV4cCI6MTczMzk1MjkwOCwiaXNzIjoiTGVhdmUiLCJhdWQiOiJVc2VycyJ9.9uBODCnSC8dhVolVhoWLR2lwbqscNqTQ1oEXqhFwYWQ'; // Replace with the actual token
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    
+    // Make a GET request to the API with requestId and status as query parameters
+    return this.http.get<any>(`http://localhost:5243/api/Request/RequestById=${requestId}&status=${status}`, { headers });
+  }
+
 
   /**
    * Reject a leave request with a rejection reason.

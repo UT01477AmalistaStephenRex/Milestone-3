@@ -1,4 +1,6 @@
-﻿using WebApplication1.Database.Entities;
+﻿using System.Data;
+using WebApplication1.Database;
+using WebApplication1.Database.Entities;
 using WebApplication1.DTOs.RequestDTO;
 using WebApplication1.DTOs.ResponseDTO;
 using WebApplication1.IRepository;
@@ -59,6 +61,30 @@ namespace WebApplication1.Service
             return data;
 
         }
+
+        //public async Task<User> Login(string email, string password, Role role)
+        //{
+        //    var dataUser = await _leaveDBContext.Users.FirstOrDefaultAsync(u => u.Email == email && u.Status == Status.Accepted);
+
+        //    if (dataUser == null)
+        //    {
+        //        if (email == "admin123@gmail.com" && password == "admin1234" && role == Role.Admin)
+        //        {
+        //            // Your admin login logic
+        //        }
+
+        //        throw new Exception("Invalid Email ID!");
+        //    }
+
+        //    if (!BCrypt.Net.BCrypt.Verify(password, dataUser.Password))
+        //    {
+        //        throw new Exception("Wrong Password");
+        //    }
+
+        //    var token = CreateToken(dataUser);
+        //    return token;
+        //}
+
 
 
         public async Task<bool> UserRequest(int id, int status)

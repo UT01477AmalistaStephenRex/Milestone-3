@@ -34,7 +34,7 @@ export class LeaveRequestComponent {
     this.leaveRequestForm = this.fb.group({
       applyDate: ['', Validators.required],
       fromDate: ['', Validators.required],
-      days: [1, [Validators.required, Validators.min(1)]],
+      days: [1, [Validators.required, Validators.min(1),Validators.max(5)]],
       reason: ['', Validators.required]
     });
   }

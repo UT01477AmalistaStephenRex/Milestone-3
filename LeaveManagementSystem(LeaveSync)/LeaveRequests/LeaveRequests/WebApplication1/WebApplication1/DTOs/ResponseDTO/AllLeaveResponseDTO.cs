@@ -1,4 +1,6 @@
-﻿namespace WebApplication1.DTOs.ResponseDTO
+﻿using WebApplication1.Database.Entities;
+
+namespace WebApplication1.DTOs.ResponseDTO
 {
     public class AllLeaveResponseDTO
     {
@@ -14,6 +16,6 @@
 
         public string Days { get; set; }
 
-        public String Status { get; set; }
+        public Status Status { get; set; }
     }
 }

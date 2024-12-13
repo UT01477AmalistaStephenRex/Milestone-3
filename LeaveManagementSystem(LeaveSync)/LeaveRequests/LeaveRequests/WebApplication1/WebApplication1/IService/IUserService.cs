@@ -1,4 +1,5 @@
-﻿using WebApplication1.DTOs.RequestDTO;
+﻿using WebApplication1.Database.Entities;
+using WebApplication1.DTOs.RequestDTO;
 using WebApplication1.DTOs.ResponseDTO;
 
 namespace WebApplication1.IService

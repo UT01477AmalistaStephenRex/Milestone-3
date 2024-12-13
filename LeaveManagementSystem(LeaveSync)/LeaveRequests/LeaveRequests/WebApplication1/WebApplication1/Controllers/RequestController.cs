@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebApplication1.Database.Entities;
 using WebApplication1.DTOs.RequestDTO;
 using WebApplication1.IService;
 
@@ -69,7 +70,7 @@ namespace WebApplication1.Controllers
 
         //request inai admin accept or pending or reject seivadhtku (request id , user id)
         [HttpPut("AcceptRejectRequest{id}")]
-        public async Task<IActionResult> AcceptRejectRequest(int id, int status)
+        public async Task<IActionResult> AcceptRejectRequest(int id, Status status)
         {
             try
             {
