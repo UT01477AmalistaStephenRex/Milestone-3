@@ -1,4 +1,5 @@
-<div class="flex-1 flex flex-col items-center text-center px-6 bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700 text-white h-lvh">
+<div
+  class="flex-1 flex flex-col items-center text-center px-6 bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700 text-white h-lvh">
   <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mt-8">
     Leave Management Dashboard
   </h1>
@@ -21,31 +22,36 @@
       </thead>
       <tbody class="text-gray-500">
         <tr *ngFor="let request of leaveRequests; let i = index"
-            [ngClass]="{'bg-gray-50': i % 2 === 0, 'bg-gray-100': i % 2 !== 0}" class="border-b hover:bg-gray-50">
-            <td class="px-6 py-4">{{ request.UserId }}</td>
-         
+          [ngClass]="{'bg-gray-50': i % 2 === 0, 'bg-gray-100': i % 2 !== 0}" class="border-b hover:bg-gray-50">
+          <td class="px-6 py-4">{{ request.UserId }}</td>
+
           <td class="px-6 py-4">{{ request.FromDate | date }}</td>
           <td class="px-6 py-4">{{ request.Days }}</td>
           <td class="px-6 py-4">{{ request.ApplyDate | date }}</td>
           <td class="px-6 py-4 text-center space-x-2">
-            <button
-              (click)="acceptRequest(request.id)"
-              class="py-1 px-3 bg-green-500 hover:bg-green-600 text-white font-medium rounded"
-            >
+
+
+          <td class="px-6 py-4 text-center space-x-2">
+            <!-- Accept Button -->
+            <button (click)="acceptLeaveRequest(request.id, 1)"
+              class="py-1 px-3 bg-green-500 hover:bg-green-600 text-white font-medium rounded">
               Accept
             </button>
-            <button
-              (click)="openRejectModal(request)"
-              class="py-1 px-3 bg-red-500 hover:bg-red-600 text-white font-medium rounded"
-            >
+
+            <!-- Reject Button -->
+            <button (click)="rejectLeaveRequest(request.id, 2)"
+              class="py-1 px-3 bg-red-500 hover:bg-red-600 text-white font-medium rounded">
               Reject
             </button>
           </td>
+
+
+
         </tr>
       </tbody>
     </table>
   </div>
-  
- 
-   
+
+
+
 </div>

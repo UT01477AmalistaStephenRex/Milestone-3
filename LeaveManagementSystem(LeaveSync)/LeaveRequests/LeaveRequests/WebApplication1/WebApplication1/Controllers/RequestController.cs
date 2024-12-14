@@ -19,12 +19,13 @@ namespace WebApplication1.Controllers
 
 
         //User request inai anuppuvadhatku
-        [HttpPost("RequestRent")]
+        [HttpPost("RequestLeave")]
         public async Task<IActionResult> RequestLeave(LRequestDTO requestDTO)
         {
             try
             {
                 var data = await _requestService.RequestLeave(requestDTO);
+
                 return Ok(data);
 
             }
@@ -34,6 +35,26 @@ namespace WebApplication1.Controllers
             }
 
         }
+
+
+        [HttpPut("AcceptRejectRequest")]
+        public async Task<IActionResult> AcceptRejectRequest([FromQuery] Status status, [FromQuery] int requestId)
+        {
+            try
+            {
+                var result = await _requestService.AcceptRejectRequest(requestId, status);
+                if (result == null) return NotFound("Request not found.");
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+     
+
+
 
         //anuppapadum anaiththu request kalaiyum petru kolla
         [HttpGet("AllRequest")]

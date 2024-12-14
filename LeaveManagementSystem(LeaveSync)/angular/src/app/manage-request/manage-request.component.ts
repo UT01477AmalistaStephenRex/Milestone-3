@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { StudentService } from '../service/student.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ManageRequestService } from '../service/manageRequest.service';
@@ -48,46 +47,44 @@ export class ManageRequestComponent implements OnInit {
   }
 
 
-  acceptRequest(requestId: number): void {
-    this.ManageRequestService.acceptRequest(requestId).subscribe(
-      (response) => {
+  acceptLeaveRequest(requestId: number, status: number): void {
+    this.ManageRequestService.acceptRequest(requestId).subscribe({
+      next: (response) => {
         console.log(`Accepted request with ID: ${requestId}`, response);
-        // Optionally, refresh the list of requests
-        this.loadRequests();
+        this.fetchData(); // Refresh the list after action
       },
-      (error) => {
-        console.error(`Error accepting request with ID: ${requestId}`, error);
-      }
-    );
+      error: (err) => {
+        console.error(`Error accepting request with ID: ${requestId}`, err);
+      },
+    });
+  }
+  
+  rejectLeaveRequest(requestId: number, status: number): void {
+    this.ManageRequestService.rejectRequest(requestId).subscribe({
+      next: (response) => {
+        console.log(`Rejected request with ID: ${requestId}`, response);
+        this.fetchData(); // Refresh the list after action
+      },
+      error: (err) => {
+        console.error(`Error rejecting request with ID: ${requestId}`, err);
+      },
+    });
   }
 
-  // Method to load a specific request by its ID
-  loadRequests(requestId?: number): void {
-    if (requestId) {
-      this.ManageRequestService.getRequests(requestId).subscribe(
-        (response) => {
-          console.log(`Loaded request with ID: ${requestId}`, response);
-          this.requests = [response];  // Display only the specific request in the list
-        },
-        (error) => {
-          console.error(`Error loading request with ID: ${requestId}`, error);
-        }
-      );
-    } else {
-      // If no ID is provided, load all requests (if applicable)
-      // this.manageRequestService.getAllRequests().subscribe(...)
+// Component Method: loadRequests
+loadRequests(): void {
+  this.ManageRequestService.getLeaveRequests().subscribe(
+    (requests) => {
+      this.leaveRequests = requests;
+      console.log('Leave requests fetched:', this.leaveRequests);
+    },
+    (error) => {
+      console.error('Error fetching leave requests:', error);
     }
-  }
+  );
+}
 
-  rejectRequest(): void {
-    if (this.selectedRequest && this.rejectionReason) {
-      console.log(
-        `Rejected request with ID: ${this.selectedRequest.id}, Reason: ${this.rejectionReason}`
-      );
-      this.rejectionReason = '';
-      this.selectedRequest = null;
-    }
-  }
+  
 
   openRejectModal(request: any): void {
     this.selectedRequest = request;

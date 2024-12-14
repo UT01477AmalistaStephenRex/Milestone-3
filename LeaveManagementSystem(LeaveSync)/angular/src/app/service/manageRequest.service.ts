@@ -16,7 +16,7 @@ export interface LeaveRequest {
   providedIn: 'root',
 })
 export class ManageRequestService {
-  private apiUrl = 'http://localhost:5243/api/Request'; // API endpoint for leave requests
+  private apiUrl = 'http://localhost:5243/api/Request'
 
   constructor(private http: HttpClient) {}
 
@@ -77,15 +77,38 @@ CreateLeaveRequests(form:any): Observable<any[]> {
    * @param requestId - ID of the leave request.
    * @returns Observable of the updated leave request.
    */
-  acceptLeaveRequest(requestId: number): Observable<LeaveRequest> {
-    return this.http.put<LeaveRequest>(`${this.apiUrl}/AcceptRequest/${requestId}`, {});
-  }
-
-  acceptRequest(requestId: number): Observable<any> {
-    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MzE2OTAiLCJlbWFpbCI6ImFkbWluMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImZpcnN0bmFtZSI6IlN1cGVyIiwibGFzdG5hbWUiOiJBZG1pbiIsImV4cCI6MTczMzk1MjkwOCwiaXNzIjoiTGVhdmUiLCJhdWQiOiJVc2VycyJ9.9uBODCnSC8dhVolVhoWLR2lwbqscNqTQ1oEXqhFwYWQ'; // Replace with the actual token
-    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
   
-    return this.http.put<any>(`http://localhost:5243/api/Request/AcceptRejectRequest17?status=${requestId}`, {}, { headers });
+
+  acceptRequest(form:any): Observable<any[]>{
+
+    form.userId=15
+    form.status=1
+    const obj3={
+    
+      "userId": 15,
+      "status": 1
+    
+  }
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MzE2OTAiLCJlbWFpbCI6ImFkbWluMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImZpcnN0bmFtZSI6IlN1cGVyIiwibGFzdG5hbWUiOiJBZG1pbiIsImV4cCI6MTczMzk1MjkwOCwiaXNzIjoiTGVhdmUiLCJhdWQiOiJVc2VycyJ9.9uBODCnSC8dhVolVhoWLR2lwbqscNqTQ1oEXqhFwYWQ'; // Replace with your token
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.post<any[]>(`http://localhost:5243/api/Request/AcceptRejectRequest?status=&requestId=`,obj3, { headers });
+
+  }
+  
+  rejectRequest(form:any): Observable<any[]> {
+    form.userId=15
+    form.status=1
+
+
+    const obj4={
+    
+      "userId": 15,
+      "status": 1
+    }
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MzE2OTAiLCJlbWFpbCI6ImFkbWluMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJBZG1pbiIsImZpcnN0bmFtZSI6IlN1cGVyIiwibGFzdG5hbWUiOiJBZG1pbiIsImV4cCI6MTczMzk1MjkwOCwiaXNzIjoiTGVhdmUiLCJhdWQiOiJVc2VycyJ9.9uBODCnSC8dhVolVhoWLR2lwbqscNqTQ1oEXqhFwYWQ'; // Replace with your token
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.post<any[]>(`http://localhost:5243/api/Request/AcceptRejectRequest?status=&requestId=`,obj4, { headers });
+
   }
   
   loadRequests(requestId: number,status:number){
@@ -105,16 +128,7 @@ CreateLeaveRequests(form:any): Observable<any[]> {
   }
 
 
-  /**
-   * Reject a leave request with a rejection reason.
-   * @param requestId - ID of the leave request.
-   * @param rejectionReason - Reason for rejecting the request.
-   * @returns Observable of the updated leave request.
-   */
-  rejectLeaveRequest(requestId: number, rejectionReason: string): Observable<LeaveRequest> {
-    const body = { rejectionReason };
-    return this.http.put<LeaveRequest>(`${this.apiUrl}/RejectRequest/${requestId}`, body);
-  }
+  
 
   /**
    * Add a new leave request.
